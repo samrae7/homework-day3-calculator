@@ -47,15 +47,17 @@ if (mode=='N') {
  else if (mode='M') {
   var principal = prompt ("Enter principal:");
   console.log('principal', principal); 
-  var Nprincipal = parseFloat 
+  var principalNo = parseFloat(principal); 
 
   var interestRate = prompt ("Enter interest rate:");
   console.log('interestRate', interestRate);
+  var interestRateNo = parseFloat(interestRate);
 
   var noPayments = prompt ("Enter number of payments:");
-  console.log('noPayments', noPayments); 
+  console.log('noPayments', noPayments);
+  var noPaymentsNo = parseFloat(noPayments);
 
-  var monthlyPayment = (((Math.pow((1+interestRate),noPayments))*interestRate)/((Math.pow((1+interestRate),noPayments))-1))*principal;
+  var monthlyPayment = (((Math.pow((1+interestRateNo),noPaymentsNo))*interestRateNo)/((Math.pow((1+interestRateNo),noPaymentsNo))-1))*principalNo;
 
   console.log('monthlyPayment', monthlyPayment);
   alert('Your monthly payment '+monthlyPayment);
