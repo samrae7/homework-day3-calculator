@@ -2,7 +2,7 @@ var mode = prompt ('Choose a calculator mode: N - normal / M- Mortage Calculator
   console.log('mode', mode);
 
 if (mode=='N') {
-  var op = prompt ("choose an operation: 'add', 'subtract', 'multiply' or 'divide'");
+  var op = prompt ("choose an operation: 'add', 'subtract', 'multiply', 'divide', 'sqRoot', 'power'");
   console.log('op', op);
 
   var num1 = prompt('choose a number');
