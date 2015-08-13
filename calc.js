@@ -1,11 +1,21 @@
 var mode = prompt ('Choose a calculator mode: N - normal / M- Mortage Calculator');
   console.log('mode', mode);
 
+if (mode !==('N'||'M')) {
+  var mode = prompt ('Please choose a valid calculator mode: N - normal / M- Mortage Calculator');
+  console.log('mode', mode);
+}
+
 if (mode=='N') {
-  var op = prompt ("choose an operation: 'add', 'subtract', 'multiply', 'divide', 'sqRoot', 'power'");
+  var op = prompt ("Choose an operation: 'add', 'subtract', 'multiply', 'divide', 'sqRoot', 'power'");
   console.log('op', op);
 
-  var num1 = prompt('choose a number');
+    if (op!==('add'||'subtract'||'multiply'||'divide'||'sqRoot'||'power')) {
+      var op = prompt ("Please choose a valid operation: 'add', 'subtract', 'multiply', 'divide', 'sqRoot', 'power'");
+      console.log('op', op);
+    }
+
+  var num1 = prompt('Choose a number');
   console.log('num1', num1);
 
   var goodNum1 = parseFloat(num1);
@@ -16,7 +26,7 @@ if (mode=='N') {
     }
 
     else if (op!=='sqRoot') {
-    var num2 = prompt('choose the second number');
+    var num2 = prompt('Choose the second number');
     console.log('num2', num2);
 
     var goodNum2 = parseFloat(num2);
